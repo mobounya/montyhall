@@ -40,7 +40,7 @@ function revealDoor(doors, chosenDoor, goatDoorNumber, toSwitch) {
   if (toSwitch == "random") {
     toSwitch = Boolean(getRandomArbitrary(0, 1));
   }
-  console.log(toSwitch);
+
   // if you decided not to switch, I'll just return the chosen door.
   if (!toSwitch) {
     return doors[chosenDoor];
